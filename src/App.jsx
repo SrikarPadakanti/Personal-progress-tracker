@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
-// Srikar's SDE Prep Tracker — fixed for missing subtopics/robustness
 export default function SrikarSDEPrepTracker() {
   const STORAGE_KEY = "sde_prep_tracker_v1";
   const PROFILE_KEY = "sde_prep_profile_v1";
@@ -230,12 +229,12 @@ export default function SrikarSDEPrepTracker() {
   const [modalInput, setModalInput] = useState("");
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-slate-900 text-white p-4 md:p-8">
-      <header className="max-w-7xl mx-auto mb-6">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-zinc-900 to-slate-900 text-white">
+      <header className="w-full px-4 md:px-8 mb-6 mt-8">
         <div className="flex items-center justify-between gap-4">
           <div>
             <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">Srikar's Progress Tracker</h1>
-            <p className="text-sm text-zinc-300">Personal progress tracker for chasing SDE dream.</p>
+            <p className="text-sm text-zinc-300">Personal progress tracker for SDE prep.</p>
           </div>
 
           <div className="flex items-center gap-3">
@@ -287,8 +286,8 @@ export default function SrikarSDEPrepTracker() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-        <aside className="md:col-span-1 bg-zinc-900/50 p-4 rounded-2xl sticky top-6 h-max">
+      <main className="flex-1 w-screen min-h-screen grid grid-cols-1 md:grid-cols-4 gap-6">
+        <aside className="md:col-span-1 w-full bg-zinc-900/50 p-4 rounded-2xl md:sticky top-6 h-max">
           <div className="mb-4">
             <input placeholder="Search topics..." className="w-full p-2 rounded-md bg-zinc-800 text-sm" onChange={() => {}} />
           </div>
@@ -316,7 +315,7 @@ export default function SrikarSDEPrepTracker() {
           </div>
         </aside>
 
-        <section className="md:col-span-3">
+        <section className="w-full min-h-screen md:col-span-3 w-full overflow-auto">
           <div className="mb-4 text-sm text-zinc-400">Drag to reorder</div>
 
           <DragDropContext onDragEnd={onDragEnd}>
