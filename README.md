@@ -26,11 +26,11 @@ Check it live on GitHub Pages:
 
 ## Screenshots
 
-![Dashboard](screenshots/dashboard.png)  
-![Add Topic](screenshots/add-topic.png)  
-![Progress](screenshots/progress.png)
+![Dashboard](screenshots/dashboard.png)
 
-_(Add your own screenshots in `screenshots/` folder)_
+![Add Topic](screenshots/add-topic.png)
+
+![Progress](screenshots/progress.png)
 
 ---
 
