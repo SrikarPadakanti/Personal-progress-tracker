@@ -1,6 +1,6 @@
-# Personal Progress Tracker | SDE Prep Dashboard
+# Personal Progress Tracker | Preparation Dashboard
 
-A **full-stack React application** to track your learning journey, topics, and subtopics for SDE preparation. This interactive tracker helps you organize study sections, manage topics/subtopics, and visualize progress with a sleek UI.
+A **full-stack React application** to track your learning journey, topics, and subtopics for preparation. This interactive tracker helps you organize study sections, manage topics/subtopics, and visualize progress with a sleek UI.
 
 ---
 
