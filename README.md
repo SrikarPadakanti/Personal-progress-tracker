@@ -1,12 +1,58 @@
-# React + Vite
+# Personal Progress Tracker | SDE Prep Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **full-stack React application** to track your learning journey, topics, and subtopics for SDE preparation. This interactive tracker helps you organize study sections, manage topics/subtopics, and visualize progress with a sleek UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Sections & Topics:** Create multiple sections (DSA, Java, System Design, etc.) and add topics/subtopics.
+- **Progress Tracking:** Visual progress bars for sections and overall completion.
+- **Drag & Drop:** Reorder topics within a section using drag-and-drop.
+- **Status Management:** Cycle through statuses: `To-do`, `Done`, `Revise`.
+- **Notes & Links:** Add notes, references, or commands to each topic/subtopic.
+- **Profile Management:** Customize your profile with name, picture, and links (GitHub, LinkedIn, LeetCode).
+- **Persistence:** Data is stored in `localStorage` — your progress stays across sessions.
+- **Responsive Design:** Mobile-first and looks clean on all screen sizes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Demo
+
+Check it live on GitHub Pages:  
+[Personal Progress Tracker](https://srikarpadakanti.github.io/Personal-progress-tracker/)
+
+---
+
+## Screenshots
+
+![Dashboard](screenshots/dashboard.png)  
+![Add Topic](screenshots/add-topic.png)  
+![Progress](screenshots/progress.png)
+
+_(Add your own screenshots in `screenshots/` folder)_
+
+---
+
+## Tech Stack
+
+- **Frontend:** React 19, TailwindCSS 3, @hello-pangea/dnd (drag & drop)
+- **Persistence:** LocalStorage
+- **Build Tool:** Vite
+- **Deployment:** GitHub Pages
+
+---
+
+## Installation & Running Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/srikarpadakanti/Personal-progress-tracker.git
+cd Personal-progress-tracker
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
